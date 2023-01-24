@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# REACT TO DO APP
+## 📝 설명
+리엑트로 
+요일별로 일정을 추가 삭제 할수있는
+일정관리 사이트 입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
+<br>
 
-## Available Scripts
+## 🔧 사용툴, 사용언어
+ - Javascript
+ - CSS3
+ - HTML5
+ - React
+ - Tailwind
+<br>
+<br>
 
-In the project directory, you can run:
+## 🔍 기능설명
+  - 메인화면
+    - 각 요일이 적혀있는 버튼과 상단에 요일 선택 옵션 항목을 선택하면
+      선택한 요일에 해당된 일정이 담겨있는 페이지로 이동합니다 .
 
-### `yarn start`
+  - 요일별 일정 목록
+    - 추가한 일정들을 확인 할수 있습니다.
+    - 일정을 삭제 할수있는 기능을 제공합니다 . 
+<br>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 👩‍💻 감상
+  리덕스를 사용하지 않고 일정관리앱을 만들다보니 
+  컴포넌트 트리 마지막에 존재하는 컴포넌트에서
+  일정이 담긴 객체를 사용하려면 컴포넌트 트리 관계를 따라서
+  props를 부모에게 자식으로 계속 전달해주는 부분이 번거롭다고 느껴졌습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  리엑트에서 css프레임워크인 
+  테일윈드를 사용해보면서 긍정적인 사용 경험을 느꼈습니다.
 
-### `yarn test`
+  하나의 파일에서 
+  jsx의 테그와 스크립트 코드의 작성과
+  테일윈드의 클래스를통한 인라인 스타일 작성방식으로 파일의 이동없이
+  빠르게 컴포넌트를 구현하는점이 편리하게 느껴졌습니다.
+<br>
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📚 어려웠던점
+프로젝트를 만들면서
+react Hook중에 useMemo와 UseCollback의 차이에 대해서
+이해하지 못한 어려움이 있었습니다 . 
+두 hook에서 리턴하는 값이 다르다는걸 깨달았고 
+각각 특징에 맞는 사용용도에 대해서 깨달을수 있었습니다.
