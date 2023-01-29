@@ -108,7 +108,7 @@ function App() {
   return (
     <div className='w-[100vw] h-[100vh] bg-gray-300'>
       <div className='w-[540px] bg-gray-100 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Header onInsert={onInsert} weekArr={weekArr}/>
           <Routes>
             <Route path='/' element={<Main weekArr={weekArr}/>}/>
