@@ -8,6 +8,8 @@ function Header({ onInsert ,weekArr }) {
   const {eng,kor} = weekArr
   const selectRef = useRef()
   const navigate = useNavigate()
+  const path = process.env.PUBLIC_URL;
+
 
 
   useEffect(() => {
@@ -50,11 +52,16 @@ function Header({ onInsert ,weekArr }) {
   
   return (
     <header className="px-[30px] pt-[30px]">
-      <h1 className="mb-[20px]">
-        <Link to={"/"} onClick={resetSelect} className="text-[48px]   font-bold bg-yellow-300">
-            TODOLIST
-        </Link>
-      </h1>
+      <div className="flex justify-between ">
+        <h1 className="mb-[20px]">
+          <Link to={"/"} onClick={resetSelect} className="text-[48px]  font-bold bg-[#52c1de] text-white">
+              TODOLIST
+          </Link>
+        </h1>
+        <div className="w-[58px] h-[58px]">
+          <img className="w-full" src={`${path}/img/skill.png`} alt="skill" />
+        </div>
+      </div>
       <form onSubmit={onSumbit} onChange={onChange} className="flex h-[50px] text-[22px]" >
         <input name="text" placeholder="일정을 적어주세요." onChange={onChange} value={valueX.text || ""} 
           className="inline-block w-[100%] pl-10px" />
@@ -64,7 +71,7 @@ function Header({ onInsert ,weekArr }) {
           eng.map(( day , i) =>(<option key={i} value={day}>{kor[i]}</option>))
         }
         </select>
-        <button type="submit" className="block text-[35px] w-[70px] bg-yellow-300">
+        <button type="submit" className="block text-[35px] w-[70px] bg-[#52c1de] text-white">
           <HiCheck className="mx-auto" />
           <Link to={`/week/${valueX.week}`}></Link>
         </button>

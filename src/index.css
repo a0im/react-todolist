@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer components {
+  .done {
+    @apply 
+    before:contents-['']
+    before:block
+    before:h-[2px]
+    before:w-full
+    before:bg-red-500
+    before:absolute
+    before:top-1/2
+    before:left-1/2
+    before:translate-x-[-50%]
+    before:translate-y-[-50%]
+  }
 }
