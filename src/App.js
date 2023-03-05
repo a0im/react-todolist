@@ -15,14 +15,14 @@ function App() {
     },
     {
       id: 2,
-      text: '갈비찜 먹을꺼야',
+      text: '쫑구랑 산책가기',
       checked: false,
       week : 'mon',
       date : '2022-12-16'
     },
     {
       id: 3,
-      text: '화요일은 넷플릭스보기',
+      text: 'javascript 공부',
       checked: true,
       week : 'tue',
       date : '2022-12-16'
@@ -43,14 +43,20 @@ function App() {
     },
     {
       id: 6,
-      text: '집에서 뒹굴뒹굴하기',
+      text: 'react공부하기',
       checked: true,
       week : 'sat',
+      date : '2022-12-16'
+    },
+    {
+      id: 7,
+      text: 'jquery공부하기',
+      checked: false,
+      week : 'sun',
       date : '2022-12-16'
     }
   ]);
 
- 
   const weekArr = {
     eng : ['mon','tue','wed','thur','fri','sat','sun'],
     kor : ['월요일','화요일','수요일','목요일','금요일','토요일','일요일']

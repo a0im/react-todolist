@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 
-
 @layer components {
-  .done {
+  .checked {
     @apply 
-    before:contents-['']
+    before:content-['']
     before:block
     before:h-[2px]
     before:w-full

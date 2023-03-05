@@ -11,14 +11,12 @@ function Header({ onInsert ,weekArr }) {
   const path = process.env.PUBLIC_URL;
 
 
-
   useEffect(() => {
     setValue({...valueX
     ,week : selectRef.current.value
     })
   },[]);
-  // if (e.target.name == 'week') navigate(`/week/${valueX.week}`)
-// .options[langSelect.selectedIndex].value
+
   const onChange = useCallback(
     e => {
       const { value, name } = e.target;
@@ -29,8 +27,6 @@ function Header({ onInsert ,weekArr }) {
     },
     [valueX]
   );
-  // navigate(`/week/${valueX.week}`)
-
 
   const onSumbit = useCallback(
     e => {

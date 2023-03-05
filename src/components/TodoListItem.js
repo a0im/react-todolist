@@ -10,11 +10,8 @@ function TodoListItem({ todo, onRemove, onToggle }) {
         {checked 
         ? <MdCheckBox className="text-[#52c1de]"/> 
         : <MdCheckBoxOutlineBlank />}
-        <div className="
-        text-[20px] ml-[30px]
-        relative
-        done
-        ">{text}</div>
+        <div className={`text-[20px] ml-[30px] relative
+        ${checked ?'checked' : 'visible'}`}>{text}</div>
       </div>
         <time className="text-[16px] leading-[30px] text-gray-400 ml-auto mr-[40px]">{date}</time>
       <div className="text-[30px]" onClick={() => onRemove(id)}>
